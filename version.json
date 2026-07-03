@@ -1,5 +1,6 @@
 {
-  "version": "2.1.0",
-  "downloadUrl": "https://github.com/YuyuetMo/robotarm-update/releases/download/v2.1.0/robotarm-v2.1.0.zip",
-  "releaseNotes": "v2.1.0 - 集成 electron-updater 自动更新\n- 启动自动检测 GitHub Releases 新版本\n- 侧边栏实时提示 + 一键跳转下载\n- AI 内容工厂（OpenAI / Claude / DeepSeek / MIMO）\n- 评论分析 / 周报生成 / 中英文对照模式"
+  "version": "2.1.1",
+  "downloadUrl": "https://github.com/YuyuetMo/robotarm-update/releases/download/v2.1.0/robotarm-v2.1.1.zip",
+  "releaseNotes": "v2.1.1: 更新应用图标为头像，修复广告CSV中文表头解析，支持 Campaign / Sponsored Products 等多种报表格式",
+  "minVersion": "2.0.0"
 }
