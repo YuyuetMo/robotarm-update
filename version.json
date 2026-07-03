@@ -1,0 +1,5 @@
+{
+  "version": "2.1.0",
+  "downloadUrl": "PLACEHOLDER",
+  "releaseNotes": "v2.1.0 版本发布\n- AI 内容工厂（支持 OpenAI / Claude / DeepSeek / MIMO）\n- 评论分析\n- 周报生成\n- 中英文对照模式\n- 自动更新提醒"
+}
