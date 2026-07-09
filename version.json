@@ -1,6 +1,6 @@
 {
-  "version": "2.3.4",
-  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.3.4/MoOps-v2.3.4-win.zip",
-  "releaseNotes": "v2.3.4：修复检查更新失败（因 dir 打包缺少 app-update.yml，改为在 main.js 中显式设置 GitHub feedURL）。已安装 v2.3.3 及更早版本的用户需手动下载一次 v2.3.4 覆盖安装，之后自动更新即恢复正常。",
+  "version": "2.3.5",
+  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.3.5/MoOps-v2.3.5-win.zip",
+  "releaseNotes": "v2.3.5：彻底修复检查更新失败。弃用 electron-updater，改为主进程直接读取 GitHub 仓库 version.json 进行版本比较，不再依赖 app-update.yml 或 latest.yml。已安装 v2.3.4/v2.3.3 及更早版本的用户需手动下载一次 v2.3.5 覆盖安装，之后检查更新功能完全正常。",
   "minVersion": "2.0.0"
 }
