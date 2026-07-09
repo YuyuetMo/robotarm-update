@@ -2,7 +2,7 @@
 
 > 一站式增长运营中枢：覆盖海外社媒、国内社媒（小红书 / 抖音）、Amazon、独立站（DTC），用 AI 把内容生产、数据分析、广告优化、诊断建议统一到一个工作台。
 
-![MoOps](https://img.shields.io/badge/MoOps-v2.3.5-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
+![MoOps](https://img.shields.io/badge/MoOps-v2.3.6-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
 
 ---
 
@@ -62,6 +62,15 @@
 ---
 
 ## 🔄 更新日志
+
+### v2.3.6 — 修复检查更新偶发 HTTP 429 限流
+- **修复**：点击「检查更新」偶发 `HTTP 429`（请求过于频繁）的问题
+- **根因**：v2.3.5 的版本检测直接读 `raw.githubusercontent.com`，GitHub 对未认证请求有严格速率限制（约 60 次/小时 / IP），短时多次点击或连续测试极易触发
+- **处理（B + D 组合方案）**：
+  - 检测源切到 **JSDelivr CDN**（`cdn.jsdelivr.net/gh/...@main/version.json`），速率限制宽松、国内访问更快
+  - **429 友好提示**：遇到限流时提示「请求过于频繁，请稍后再试」并给出前往 Releases 的入口，不再误报为网络故障
+  - **手动检查节流**：两次手动点击间隔至少 30 秒，从源头避免频繁请求
+- **注意**：CDN 边缘缓存约有 5 分钟延迟，发版后不会立即生效；已安装 v2.3.5 及更早版本的用户需手动下载一次 v2.3.6 覆盖安装
 
 ### v2.3.5 — 彻底修复检查更新失败
 - **修复**：解决 v2.3.4 点击「检查更新」时报「Cannot find latest.yml in the latest release artifacts (404)」的问题
