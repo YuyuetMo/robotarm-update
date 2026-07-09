@@ -1,6 +1,6 @@
 {
-  "version": "2.3.2",
-  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.3.2/MoOps-v2.3.2-win.zip",
-  "releaseNotes": "v2.3.2: 侧边栏分组色彩化——每个板块拥有专属品牌色，点开分组后该分组标题加粗并变为专属色、子栏目出现同色标识线，激活项也用该色，一眼区分当前所在板块。",
+  "version": "2.3.3",
+  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.3.3/MoOps-v2.3.3-win.zip",
+  "releaseNotes": "v2.3.3: 修复侧边栏分组收起逻辑——点击已展开的分组（即使其子项正处于激活状态）也能整组收起，再次点击展开，所有大功能行为一致；同时为展开的分组加上下专属色分隔线与淡色底纹，形成清晰分区，一眼区分当前所在板块。",
   "minVersion": "2.0.0"
 }
