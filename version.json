@@ -1,6 +1,6 @@
 {
-  "version": "2.2.0",
-  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.2.0/MoOps-v2.2.0-win.zip",
-  "releaseNotes": "v2.2.0: 品牌重命名为 MoOps；新增工作报告、A/B测试、Listing优化、利润计算器等页面；内容工厂目标受众支持手动输入+AI推荐；修复 MIMO API 认证与模型ID问题；重构页面自动注册系统。",
+  "version": "2.3.0",
+  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.3.0/MoOps-v2.3.0-win.zip",
+  "releaseNotes": "v2.3.0: 新增国内社媒运营（小红书笔记工厂/经营月报OCR诊断/爆款拆解/关键词SEO，抖音脚本工厂/直播话术/直播策划/视频诊断）；新增独立站运营（广告分析/SEO内容引擎/转化优化/邮件营销/数据看板）；Amazon 提升为一级分类；全站支持白天/黑夜主题切换；新增 OCR 多模态识图能力。",
   "minVersion": "2.0.0"
 }
