@@ -2,7 +2,7 @@
 
 > 一站式增长运营中枢：覆盖海外社媒、国内社媒（小红书 / 抖音）、Amazon、独立站（DTC），用 AI 把内容生产、数据分析、广告优化、诊断建议统一到一个工作台。
 
-![MoOps](https://img.shields.io/badge/MoOps-v2.3.3-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
+![MoOps](https://img.shields.io/badge/MoOps-v2.3.4-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
 
 ---
 
@@ -62,6 +62,12 @@
 ---
 
 ## 🔄 更新日志
+
+### v2.3.4 — 修复自动更新检测失败
+- **修复**：解决点击「检查更新」时报「无法连接更新服务器：ENOENT: no such file or directory, app-update.yml」的问题
+- **根因**：`dir` 目标打包未生成 electron-updater 所需的本地 `app-update.yml`，导致应用无法读取 GitHub 更新源
+- **处理**：在 `main.js` 中显式设置 `autoUpdater.setFeedURL({ provider: 'github', owner: 'YuyuetMo', repo: 'MoOps' })`，不再依赖本地 `app-update.yml`
+- **注意**：已安装 v2.3.3 及更早版本的用户需要手动下载一次 v2.3.4 覆盖安装；升级到 v2.3.4 后自动更新功能将完全恢复正常
 
 ### v2.3.3 — 侧边栏分组收起修复 + 分区分隔线
 - **修复分组收起逻辑**：此前在展开分组内点开某个子项后，再点该分组标题无法收回；现已支持「再次点击整组收起」，所有大功能行为一致（无论其子项是否处于激活状态）
