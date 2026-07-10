@@ -2,7 +2,7 @@
 
 > 一站式增长运营中枢：覆盖海外社媒、国内社媒（小红书 / 抖音）、Amazon、独立站（DTC），用 AI 把内容生产、数据分析、广告优化、诊断建议统一到一个工作台。
 
-![MoOps](https://img.shields.io/badge/MoOps-v2.4.0-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
+![MoOps](https://img.shields.io/badge/MoOps-v2.4.1-22d3ee) ![License](https://img.shields.io/badge/license-MIT-34d399) ![Platform](https://img.shields.io/badge/platform-Windows-0078d4)
 
 ---
 
@@ -34,7 +34,7 @@
 - 视频数据分析：播放 / 完播 / 互动可视化 + AI 诊断
 
 ### 🛒 Amazon 运营（一级导航）
-- 运营总览、广告 CSV 分析（ACoS / CTR / CVR + **AI 投放诊断**）、评论分析、Listing 优化、利润计算器
+- 运营总览、广告 CSV 分析（ACoS / CTR / CVR + **AI 投放诊断 · 反驳 / 追问闭环**）、评论分析、Listing 优化、利润计算器
 
 ### 🌐 独立站运营（DTC）
 - 广告投放分析、SEO 内容引擎、转化优化（Landing Page 诊断）、邮件营销工厂、独立站数据看板
@@ -62,6 +62,13 @@
 ---
 
 ## 🔄 更新日志
+
+### v2.4.1 — 广告诊断「投放顾问 · 反驳 / 追问闭环」
+- **业务策略备忘录**：在 AI 诊断前可声明真实商业目标（如「基本盘不靠 Amazon，纯品牌曝光，赔本也行」「有线下/独立站基本盘，Amazon 只做信任背书」），AI 诊断会把它作为第一优先级，跳出纯 ACoS/ROAS 数据视角
+- **反驳 / 追问闭环**：诊断下方新增对话区，可补充业务情况或反驳某条建议，AI 结合策略与完整对话上下文重新评估，必要时坦诚承认此前建议的局限性并修正
+- **快捷反驳 chips**：品牌曝光优先 / 线下基本盘 / 预算有限保 ROI / 反驳上一条，一键填入
+- **Enter 发送**：对话输入框按回车发送，Shift+Enter 换行（与全局 Enter 提交一致）
+- 本次为小版本补完，已安装 v2.4.0 的用户通过应用内「检查更新」即可升级
 
 ### v2.4.0 — SEO 内容引擎 & 爆款笔记拆解重大升级
 - **SEO 内容引擎重构（独立站运营）**：
