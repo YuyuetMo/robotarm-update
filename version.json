@@ -1,7 +1,7 @@
 {
-  "version": "2.6.0",
-  "sha256": "760EA9A3E921E7F9C968AF9D7F561048E16F9F0B632564A3FFAAF68B1D593C07",
-  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.6.0/MoOps-v2.6.0-win.zip",
-  "releaseNotes": "v2.6.0：运营闭环补完（生成 → 合规 → 发布 → 复盘）。\n\n【运营中枢 · 新增 12 个模块】\n- 内容格式工作室：草稿解析为结构化 ContentPackage，按平台确定性适配篇幅 / 标签 / 链接 / @ 限制（替代 AI 猜字数）；超限智能缩写保留 CTA；修改前后对比\n- 品牌资产库：沉淀品牌 / 产品 / 卖点 / 口吻，生成时自动注入系统提示（设置内可关）\n- 内容战役 Campaign：目标 / 平台 / 时间线 / 内容清单，AI 生成排期\n- 发布中心：发布前强制四层违规检查门（硬规则 / 内容风险 / 商业合规 / 素材提示）+ 发布台账 + 异常任务中心 + 证据链导出\n- 统一互动收件箱、选题机会池、转化归因（UTM + ROAS）、实验中心、达人合作、舆情监测、操作审计、平台能力矩阵\n\n【垂直板块补完】\n- Amazon 垂直：广告历史 / 评论 / 利润预警台账\n- 独立站垂直：分群 / 挽回 / 落地页 / SEO 台账\n\n【工程与信任】\n- version.json 增加 SHA-256 校验字段（更新弹窗展示，可核对完整性）\n- README 统一去除 electron-updater 矛盾表述\n- 新增 LICENSE（闭源）与 PRIVACY（隐私 / 数据流）文档\n\n【说明】审计确认应用内无「AI 原创查重」模块，原计划「查重改名」项无对应对象故跳过；API Key 本地 AES 加密按决策暂缓，保留数据导出 / 导入备份。",
+  "version": "2.6.1",
+  "sha256": "2030F4817653761D249E6A0FC25F0FCE0D1B14E5AB022F3E5399CFCA4978AE50",
+  "downloadUrl": "https://github.com/YuyuetMo/MoOps/releases/download/v2.6.1/MoOps-v2.6.1-win.zip",
+  "releaseNotes": "v2.6.1：白屏 bug 紧急修复（基于 v2.6.0）。\n\n【修复内容】\n- 修复打开后主界面完全空白（白屏）的问题：\n  - 根因1：部分模块在全局状态 S 定义前于顶层访问 S，触发 TDZ 报错导致初始化中断 → 已移除顶层状态守卫，改用函数内惰性初始化。\n  - 根因2：构建配置未把 src/js 模块脚本打进安装包（asar），运行时模块缺失 → 已在 package.json 的 files 显式包含 src/js/**/*，重新打包后全部 16 个模块已正确内置。\n- 已通过无头加载验证：主内容区正常渲染（数据看板），无运行时报错。\n\n【重要】v2.6.0 安装包存在白屏缺陷，请勿使用，请升级到 v2.6.1。下载后解压运行其中的 MoOps.exe 覆盖旧版即可。SHA-256 见上，可在应用内「检查更新」弹窗核对完整性。",
   "minVersion": "2.0.0"
 }
