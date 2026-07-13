@@ -1,0 +1,12 @@
+{
+  "version": "v1",
+  "date": "2026-07-13",
+  "note": "易变平台规则由维护者定期更新；稳定法律红线已内置。检测到时与内置红线 + 用户自定义词合并生效。",
+  "extra": {
+    "xhs": ["诱导互动", "私信领福利", "点赞过万", "爆款模板限时", "点击下方主页", "扫码", "加粉丝群", "主页有惊喜"],
+    "dy": ["诱导互动", "私信领福利", "点赞过万", "点击下方主页", "扫码", "加粉丝群", "绝对保真", "主页有惊喜"],
+    "amazon": ["bestseller", "top rated", "free trial", "limited stock", "act now", "100% satisfaction", "amazon's choice"],
+    "overseas": ["bestseller", "top rated", "free trial", "limited stock", "act now", "100% satisfaction"],
+    "site": ["诱导互动", "私信领福利", "扫码", "加粉丝群", "全网底价", "绝对保真", "主页有惊喜"]
+  }
+}
